@@ -7,6 +7,63 @@
     <title>Forms</title>
 </head>
 <body>
+    <h3>Form Tutorial</h3>
+    <!-- Here action attributes tells where all the data collected from FORM will go -->
+    <form action="backend.php">
+        <!-- Here type tells type of data and name helps in defining this later in backend -->
+
+        <!-- Let say If you just want to click on the box name and you could write there we use label tag. This tag helps user if they click(Here it is "Name") the corresponding box gets activated.Also in for attribute of label tag same thing should be written which is written in id tag as label tag identifies it through id that on which input label tag is applied -->
+        <!-- for example if in for i write "role" than box of role gets activated because of its id and for in label tag are same -->
+        
+        <div>
+            <label for="name">Name</label>
+            <input type="text" name = "MyInput" id="name">
+        </div>
+        <br>
+        <div>
+            Role: <input type="text" name = "MyRole" id ="role">
+        </div>
+        <br>
+        <div>
+            Email: <input type="email" name = "MyEmail">
+        </div>
+        <br>
+        <div>
+            Bonus: <input type="number" name = "MyBonus">
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name = "MyDate">
+        </div>
+        <br>
     
+        <div>
+            <label for="eligible">Are you eligible?</label> <input type="checkbox" name = "MyEligibility" id="eligible">
+            <!-- Write "checked" in above input tag if you want checkbox to be by default checked -->
+        </div>
+        <br>
+        <div>
+            Gender: Male<input type="radio" name = "MyGender"> FeMale<input type="radio" name = "MyGender"> Other<input type="radio" name = "MyGender">
+        </div>
+        <br>
+        <div>
+            Write something about yourself: <br><textarea name="Mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="car">Choose Car</label>
+            <select name="myCar" id="car">
+                <option value="ind">Indica</option>
+                <option value="swf">Swift</option>
+                <!-- If you want to show any by default car to be choosen write "selected" in option tag of which you want to set it as default -->
+            </select>
+        </div>
+        <br>
+        <div>
+            Submit: <input type="submit" name = "MySubmit">
+            Reset: <input type="reset" name="Reset">
+        </div>
+        <br>
+    </form> 
 </body>
 </html>
