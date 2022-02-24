@@ -1,0 +1,11 @@
+p{
+    color: black;
+    background-color: rgb(160, 145, 95);
+}
+
+Important Note:
+1. Inline css is preferred over any other
+   a.Internal css in head
+   b.External css link with any other css file in head tag.
+2. If there is no Inline Css in the tag and have both Internal and External CSS in head tag then one which at the bottom will be given priority.
+   Also if you want to give any property permanent like background-color--> write "!important" there to keep it permanent. For example we did in tut10.html in background color in internal tag.

@@ -5,65 +5,83 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forms</title>
+    <style>
+        body {
+          background-image: url('pic.jpg');
+        }
+         #heading{
+            background-color:lightblue;
+        } 
+        </style>
 </head>
 <body>
-    <h3>Form Tutorial</h3>
+    
+    <h1 id="heading">WELCOME TO KUSH SUPERMARKET... THANK YOU FOR CHOOSING US</h1>
     <!-- Here action attributes tells where all the data collected from FORM will go -->
-    <form action="backend.php">
+    
         <!-- Here type tells type of data and name helps in defining this later in backend -->
 
         <!-- Let say If you just want to click on the box name and you could write there we use label tag. This tag helps user if they click(Here it is "Name") the corresponding box gets activated.Also in for attribute of label tag same thing should be written which is written in id tag as label tag identifies it through id that on which input label tag is applied -->
         <!-- for example if in for i write "role" than box of role gets activated because of its id and for in label tag are same -->
-        
+    <form>
         <div>
-            <label for="name">Name</label>
-            <input type="text" name = "MyInput" id="name" placeholder ="Enter your name">
-        </div>
-        <br>
-        <div>
-            Role: <input type="text" name = "MyRole" id ="role">
-        </div>
-        <br>
-        <div>
-            Email: <input type="email" name = "MyEmail">
-        </div>
-        <br>
-        <div>
-            Bonus: <input type="number" name = "MyBonus">
-        </div>
-        <br>
-        <div>
-            Date: <input type="date" name = "MyDate">
-        </div>
-        <br>
-    
-        <div>
-            <label for="eligible">Are you eligible?</label> <input type="checkbox" name = "MyEligibility" id="eligible">
-            <!-- Write "checked" in above input tag if you want checkbox to be by default checked -->
-        </div>
-        <br>
-        <div>
-            Gender: Male<input type="radio" name = "MyGender"> FeMale<input type="radio" name = "MyGender"> Other<input type="radio" name = "MyGender">
-        </div>
-        <br>
-        <div>
-            Write something about yourself: <br><textarea name="Mytext" id="" cols="30" rows="10"></textarea>
-        </div>
-        <br>
-        <div>
-            <label for="car">Choose Car</label>
-            <select name="myCar" id="car">
-                <option value="ind">Indica</option>
-                <option value="swf">Swift</option>
+            <label for="card">Choose PAYMENT MODE </label>
+            <select name="myCard" id="card">
+                <option value="MASTER CARD">MASTER CARD</option>
+                <option value="VISA CARD">VISA CARD</option>
+                <option value="PHONE PAY">PHONE PAY</option>
                 <!-- If you want to show any by default car to be choosen write "selected" in option tag of which you want to set it as default -->
             </select>
         </div>
         <br>
+        <div>
+            <label for="NAME"> Enter your Name: </label>
+            <input type="text" name="Myname" id="name" placeholder="ENTER NAME">
+        </div>
+        <br>
+        <div>
+            <label for="CARD NUMBER"> CARD NUMBER: </label>
+            <input type="number" name = "MyInput" id="CARD NUMBER" placeholder ="Enter your CARD NUMBER">
+        </div>
+        <br>
+        <!-- <div>
+            Role: <input type="text" name = "MyRole" id ="role">
+        </div>
+        <br> -->
+        <!-- <div>
+            Email: <input type="email" name = "MyEmail">
+        </div>
+        <br> -->
+        <div>
+            CVV: <input type="number" name = "MyCVV" placeholder="Enter CVV">
+        </div>
+        <br>
+        <div>
+            Expiry Date: <input type="date" name = "MyDate">
+        </div>
+        <br>
+    
+        
+        <!-- <div>
+            Gender: Male<input type="radio" name = "MyGender"> FeMale<input type="radio" name = "MyGender"> Other<input type="radio" name = "MyGender">
+        </div>
+        <br> -->
+        <div>
+            Provide us feedback to improve <br><textarea name="Mytext" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+            <label for="eligible">Are you eligible for lucky draw?</label> <input type="checkbox" name = "MyEligibility" id="eligible">
+            <!-- Write "checked" in above input tag if you want checkbox to be by default checked -->
+        </div>
+        <br>
+        
         <div>
             Submit: <input type="submit" name = "MySubmit">
             Reset: <input type="reset" name="Reset">
         </div>
         <br>
     </form> 
+
 </body>
 </html>
